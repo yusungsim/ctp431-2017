@@ -1,6 +1,8 @@
 # Homework 1: Beatbox
 
 ![Beatbox](./beatbox.jpg)
+
+
 The first homework is implementing a simple beatbox with which you can play music beats. The start-up code is provided so that you can easily work on it. Checking out the following links will help you to get more understanding on it.  
 
 
@@ -34,9 +36,3 @@ and this in the URL of web browser.
 ```sh
 http://127.0.0.1:8080/ 
 ```
-#### Javascript playgrounds 
-Another option to run your code in a server is using Javascript playgrounds where you can edit and run the code in the web browser:
-- http://jsbin.com/
-- https://jsfiddle.net/
-- http://codepen.io/
-- http://liveweave.com/
