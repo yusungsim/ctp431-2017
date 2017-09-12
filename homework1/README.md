@@ -28,7 +28,7 @@ Extend the start-up code by
 
 
 ## Step #4
-Create your own homepage for this course and submit the code to it. I recommend you to use [Github Pages](https://pages.github.com/)
+Create your own homepage for this course and submit the code to it. I recommend you to use [Github Pages](https://pages.github.com/).
 
 
 ### Tips for coding
