@@ -7,8 +7,11 @@ The first homework is implementing a simple beatbox with which you can play musi
 
 
 [Wikipedia: Beatboxing](https://en.wikipedia.org/wiki/Beatboxing)
+
 [Beatbox community: www.humanbeatbox.com](https://www.humanbeatbox.com/)
-[How to make basic beatbox sounds](https://www.youtube.com/watch?v=B6-45rswo0o)
+
+[Youtube: How to make basic beatbox sounds](https://www.youtube.com/watch?v=B6-45rswo0o)
+
 
 ## Step #1 
 Practice the beatboxing and record your voice. You can modify the recorded samples using audio effects in [Audacity](http://www.audacityteam.org/) or [Adobe Audition](http://www.adobe.com/kr/products/audition.html) (freely available on campus). 
