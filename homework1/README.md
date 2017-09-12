@@ -31,6 +31,8 @@ Extend the start-up code by
 Create your own homepage for this course and submit the code to it. I recommend you to use [Github Pages](https://pages.github.com/).
 
 
+
+
 ### Tips for coding
 
 #### Http-server: simulating web servers on a local computer
