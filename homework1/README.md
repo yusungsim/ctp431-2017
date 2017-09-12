@@ -3,7 +3,7 @@
 ![Beatbox](./beatbox.jpg)
 
 
-The first homework is implementing a simple beatbox with which you can play music beats. The start-up code is provided so that you can easily work on it. Checking out the following links will help you to get more understanding on it.  
+The first homework is implementing a simple beatbox with which you can play musical beats. The start-up code is provided so that you can easily work on it. Checking out the following links will help you to get more understanding on it.  
 
 
 [Wikipedia: Beatboxing](https://en.wikipedia.org/wiki/Beatboxing)
@@ -25,6 +25,10 @@ Download the start-up code and fill out the empty part.
 Extend the start-up code by 
 - Adding more (different types of) beat samples and corresponding pad buttons on the GUI
 - (Optional) Decorating the GUI with text or visual components 
+
+
+## Step #4
+Create your own homepage for this course and submit the code to it. I recommend you to use [Github Pages](https://pages.github.com/)
 
 
 ### Tips for coding
