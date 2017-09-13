@@ -3,7 +3,7 @@
 ![Beatbox](./beatbox.jpg)
 
 
-The first homework is implementing a simple beatbox with which you can play musical beats. The start-up code is provided so that you can easily work on it. Checking out the following links will help you to get more understanding on it.  
+The first homework is implementing a simple beatbox with which you can play musical beats. The starter code is provided so that you can easily work on it. Checking out the following links will help you to get more understanding on it.  
 
 
 [Wikipedia: Beatboxing](https://en.wikipedia.org/wiki/Beatboxing)
@@ -17,12 +17,12 @@ The first homework is implementing a simple beatbox with which you can play musi
 Practice the beatboxing and record your voice. You can modify the recorded samples using audio effects in [Audacity](http://www.audacityteam.org/) or [Adobe Audition](http://www.adobe.com/kr/products/audition.html) (freely available on campus). 
 
 ## Step #2
-Download the start-up code and fill out the empty part. 
+Download the starter code and fill out the empty part. 
 - Load the recorded audio samples and make sure if they are played correctly.  
 - Add gain nodes for each sample in the web audio path. Control the gain parameter such that it adjusts the volume in dB scale with the range from -24 to 0 dB. 
 
 ## Step #3
-Extend the start-up code by 
+Extend the starter code by 
 - Adding more (different types of) beat samples and corresponding pad buttons on the GUI
 - (Optional) Decorating the GUI with text or visual components 
 
