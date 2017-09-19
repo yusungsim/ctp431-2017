@@ -8,6 +8,8 @@
 	<h1> Visualize Audio from Microphone Input </h1>
 	<p>Web audio API example: takes audio input from microphone visulizes the waveform and spectrogram in real-time. </p>
 	
+	<button id='freeze_button' onclick="toggleFreezeAnimation()">Freeze</button>	  
+
 	<p><canvas id='wave_view' style="background: white;"></canvas></p>
 	<p><canvas id='spec_view' style="background: white;"></canvas></p>
 
@@ -19,6 +21,8 @@
 	var wave_view, spec_view;
 	var WIDTH = 1024;
 	var HEIGHT = 256;
+
+	var freeze_status = false;
 
 	//
 	window.onload=function(){		
@@ -79,7 +83,9 @@
 		drawContext.stroke();
 		
 		// queue for next callback
-		window.requestAnimationFrame(draw_wave);
+		if ( freeze_status == false ) {
+			window.requestAnimationFrame(draw_wave);
+		}
 	}
 	
 	function draw_spec() {
@@ -143,13 +149,15 @@
 		}
 */		
 		// queue for next callback
-		window.requestAnimationFrame(draw_spec);
+		if ( freeze_status == false ) {
+			window.requestAnimationFrame(draw_spec);
+		}
 	}
 	
 
 	
 	if (!navigator.getUserMedia)
-		navigator.getUserMedia = (navigator.getUserMedia({audio: true}) || navigator.webkitGetUserMedia || navigator.mozGetUserMedia || navigator.msGetUserMedia);
+		navigator.getUserMedia = (navigator.getUserMedia({audio: true}) || navigator.webkitGetUserMedia || navigator.mediaDevices.getUserMedia || navigator.msGetUserMedia);
 							  
 	if (!navigator.getUserMedia)
 		alert("Error: getUserMedia not supported!");
@@ -177,6 +185,20 @@
 		console.error('Error getting microphone', error);
 	}
 
+	function toggleFreezeAnimation() {
+		if (freeze_status == true) {
+			freeze_status = false;
+			window.requestAnimationFrame(draw_wave);			
+			window.requestAnimationFrame(draw_spec);			
+			var freeze_button = document.getElementById("freeze_button");
+			freeze_button.innerHTML = 'freeze';
+		}
+		else {
+			freeze_status = true;
+			var freeze_button = document.getElementById("freeze_button");
+			freeze_button.innerHTML = 'unfreeze';
+		}
+	}	
 	</script>
 </body>
 </html>

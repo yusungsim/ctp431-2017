@@ -11,6 +11,7 @@
 	<input id="fileChooseInput" type="file"></input>
 	<button onclick="playSound(myAudioBuffer)">Play</button>
 	<button onclick="stopSound()">Stop</button>	  
+	<button id='freeze_button' onclick="toggleFreezeAnimation()">Freeze</button>	  
 
 	<p><canvas id='spec_view' style="background: white;"></canvas></p>
 
@@ -22,6 +23,10 @@
 	var spec_view;
 	var WIDTH = 1024;
 	var HEIGHT = 512;
+
+	var freeze_status = false;
+
+	window.requestAnimationFrame(draw_spec);
 
 	//
 	window.onload=function(){
@@ -107,7 +112,9 @@
 */
 
 		// queue for next callback
-		window.requestAnimationFrame(draw_spec);
+		if ( freeze_status == false ) {
+			window.requestAnimationFrame(draw_spec);
+		}
 	}
 	
 
@@ -135,6 +142,10 @@
 	  
 	  source.start();
 	  
+	  if (freeze_status == true) {
+	  	toggleFreezeAnimation();		
+	  }	  
+	  
 	  // visualize audio
 	  draw_spec();
 	}
@@ -144,6 +155,21 @@
 	    source.stop();
 	  }
 	}	   	
+	
+	function toggleFreezeAnimation() {
+		if (freeze_status == true) {
+			freeze_status = false;
+			window.requestAnimationFrame(draw_spec);			
+			var freeze_button = document.getElementById("freeze_button");
+			freeze_button.innerHTML = 'freeze';
+		}
+		else {
+			freeze_status = true;
+			var freeze_button = document.getElementById("freeze_button");
+			freeze_button.innerHTML = 'unfreeze';
+		}
+	}
+
 	</script>
 </body>
 </html>
