@@ -18,7 +18,6 @@ var loudness_value;
 var pitch_view;
 var pitch_value;
 
-
 var WIDTH = 480;
 var HEIGHT = 320;
 var SOUND_METER_WIDTH = 100;
