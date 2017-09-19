@@ -19,7 +19,7 @@ var pitch_view;
 var pitch_value;
 
 
-var WIDTH = 360;
+var WIDTH = 480;
 var HEIGHT = 320;
 var SOUND_METER_WIDTH = 100;
 var SOUND_METER_HEIGHT = HEIGHT;
@@ -81,7 +81,7 @@ function draw_loudness() {
 	var loudness = calc_sound_level_dB(data_array)
 
 	// display the loudness value
-	loudness_value.innerHTML = 'Level (dB): ' + loudness + ' dB'
+	loudness_value.innerHTML = 'Level(dB): ' + loudness + ' dB'
 
 	// 2d canvas context
 	var drawContext = loudness_view.getContext('2d');
@@ -146,7 +146,7 @@ function draw_pitch() {
 		periodicity_map = 0.0;
 	}
 
-	var r = 40.0*periodicity_map;
+	var r = 20.0*periodicity_map;
 
 	// circle
 	drawContext.beginPath();
