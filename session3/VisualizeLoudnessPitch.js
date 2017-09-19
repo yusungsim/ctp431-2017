@@ -33,6 +33,7 @@ var pitch_ani_id;
 // load demo audio feils
 var demo_buffer;
 
+
 window.onload=function(){
 
 	var mic = document.getElementById("micInput");
