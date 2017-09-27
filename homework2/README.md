@@ -29,8 +29,8 @@ The following examples might provide you with some inspiration:
 - http://srchea.com/apps/sound-visualizer-web-audio-api-webgl/
 - http://mdn.github.io/violent-theremin/
 - https://airtightinteractive.com/demos/js/reactive/
+- https://www.openprocessing.org/
 - https://codepen.io (query with "sound visualization" or "music visualization")
-
 
 ## Step #3: Your visualization and deliverable
 - Make your own music visulizer, Using web audio, canvas or p5.js,  
