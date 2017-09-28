@@ -3,7 +3,7 @@
 
 ![Music Visualizer Example 1](./music_visualizer1.png)
 ![Music Visualizer Example 2](./music_visualizer2.png)
-![Music Visualizer Example 3](./music_visualizer3b.png)
+![Music Visualizer Example 3](./music_visualizer3c.png)
 
 The goal of this homework is designing a music visualizer that maps audio representation or their features (e.g. waveform, spectrum, energy, sub-band energy, pitch and so on) to graphical animations. Some historical backgrounds are explained below:
 
