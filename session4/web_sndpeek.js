@@ -11,7 +11,6 @@ for (i=0;i<DEPTH;i++) {
 	}
 }
 
-
 // x[5][12] = 3.0;
 var cur_spec_index = 0;
 
@@ -19,7 +18,10 @@ var cur_spec_index = 0;
 function setup() {
 	createCanvas(1024, 640, WEBGL);
 
-	perspective(45 / 180 * PI, width/height, 0.5, 0);
+	//perspective(45 / 180 * PI, width/height, 0.5, 0);
+	var fov = 45 / 180 * PI;
+  	var cameraZ = (height/2.0) / tan(fov/2.0);
+  	perspective(fov, width/height, cameraZ * 0.1, cameraZ * 10);
 
 	mic = new p5.AudioIn();
 	mic.start()
@@ -30,9 +32,13 @@ function setup() {
 function draw() {
 	background(0);
 	
-	//fill(100, 255, 100);
+	// viewer's pespective
 	camera(0, -300, 300);
 
+	// add interactivity
+	orbitControl();
+
+	// get spectrum 
  	var spectrum = fft.analyze();
 
  	// store current spectrum
@@ -40,7 +46,7 @@ function draw() {
  		spec_array[cur_spec_index][i] = spectrum[i];
  	}
 
- 	// drawing spectrum from the circular buffer
+ 	// draw spectrum using a 2D-circular buffer
  	for (var i = 0; i < DEPTH; i++) {
  		array_index = cur_spec_index - i;
  		if (array_index < 0) {
