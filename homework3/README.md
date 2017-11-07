@@ -8,7 +8,7 @@ You are going to design a music synthesizer that generates musical sounds based 
 
 
 ## Step #1 
-A simple synth that generates tones with oscillator, filter and amplitude envelope is already implemented in the start-up code. Your mission is going to add two types of controllers, LFO (Low Frequency Oscillator) and ENV (Envelope) to it. The LFO is connected to the oscillator frequency to control pitch (i.e. vibrato), and the ENV is connected to the filter cutoff-frequency to control timbre. In order to implement them, modify hw3.js and synth.js on your own.       
+A simple synth that generates tones with oscillator, filter and amplitude envelope is already implemented in the start-up code. Your mission is adding two types of controllers, LFO (Low Frequency Oscillator) and ENV (Envelope) to it. The LFO is connected to the oscillator frequency to control pitch (i.e. vibrato), and the ENV is connected to the filter cutoff-frequency to control timbre. In order to implement them, modify hw3.js and synth.js on your own.       
 
 
 ## Step #2
